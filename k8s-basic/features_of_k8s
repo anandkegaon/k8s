@@ -1,0 +1,40 @@
+feature of k8s:
+following are the basic features of k8s.
+
+Automatic bin packing :
+service discovery and load balancing :
+storage orch :
+self healing :
+
+1) Automatic bin packing:
+
+Kubernetes automatic bin packing works by intelligently scheduling containers onto nodes in a cluster, taking into account factors such as resource requirements, utilization, and availability..
+Bin packing is the process in k8s where this process will allocate the required resource to all the pod and nodes , form available resource with keeping all nodes in high availablity.
+
+
+2) service discovery and load balancing :
+
+K8s will create the services using combination of pods , each pods containes uniqe IP and storage and container inside it ,
+for those service k8s assign the DNS name and do the load-balance acroos them.
+
+with this system k8s will have control over the network and communication between pods and can do load balancing across them.
+
+3) storage orch :Container reuires storage to store the data , pod can have a storage volumes.
+
+this volumes will be shared in between all the conatainer inside the pod.
+
+k8s allow us to select the volume form diff cloud providers like aws,azure,gcp,local storage.
+
+4)self healing:
+ K8s is having the self healing feature using which it will perfom below operation.
+
+"if container fails - restarts container/recreate 
+ if node dies  - replace and reschedule cont.
+ if cont. does not respond to the user defined health check up- kill the cont."
+
+
+
+
+
+
+
